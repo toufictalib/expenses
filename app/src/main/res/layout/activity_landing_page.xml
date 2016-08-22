@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:id="@+id/values"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/bottom"
+        android:layout_alignParentTop="true"
+
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dip"
+            android:layout_weight="0.4"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/small_margin"
+
+
+            android:background="@drawable/border_black"
+            android:text="Save" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="0dip"
+            android:layout_weight="0.4"
+            android:layout_height="match_parent"
+
+
+            android:gravity="center"
+            android:layout_margin="@dimen/small_margin"
+            android:background="@drawable/border_black"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/currency"
+            android:layout_width="0dip"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:text="$"
+
+            android:textStyle="bold"
+            android:textSize="@dimen/t20"
+            android:layout_margin="@dimen/small_margin"
+
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
